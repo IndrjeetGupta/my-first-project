@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/skeleton.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <h1>Cute Little App</h1>
+          <p>Cute little app</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="columns four sidebar-one" id="sidebar-one">
+          <h4>Actions</h4>
+          <button id="fetch-recipes" class="u-full-width button button-primary">
+            Fetch Recipes
+          </button>
+          <button
+            id="fetch-employees"
+            class="u-full-width button button-primary"
+          >
+            Fetch Employees
+          </button>
+          <hr />
+
+          <h4>Sort Based On Price</h4>
+          <button
+            id="sort-low-to-high"
+            class="u-full-width button button-primary"
+          >
+            Sort Low To High
+          </button>
+          <button
+            id="sort-high-to-low"
+            class="u-full-width button button-primary"
+          >
+            Sort High To Low
+          </button>
+          <hr />
+
+          <h4>Filter Based On Price</h4>
+          <button
+            id="filter-less-than-50"
+            class="u-full-width button button-primary"
+          >
+            less than 50
+          </button>
+          <button
+            id="filter-more-than-equal-50"
+            class="u-full-width button button-primary"
+          >
+            more than or equal 50
+          </button>
+   
+        </div>
+
+        <div class="columns eight main">
+          <div class="notifications-wrapper" id="notifications-wrapper"></div>
+          <div class="data-list-wrapper" id="data-list-wrapper"></div>
+          <div class="pagination-wrapper" id="pagination-wrapper"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./scripts/main.js" type="module"></script>
+  </body>
+</html>
